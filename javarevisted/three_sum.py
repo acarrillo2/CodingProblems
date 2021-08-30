@@ -3,7 +3,10 @@ Given an array n integers, are there elements a, b, c in array such that sum of 
 
 How can you solve this same problem if you want unique triplets?
 """
-from datetime import datetime, timedelta
+from datetime import datetime
+import sys
+sys.path.append('/Users/austin/workspace/CodingProblems/src/CodingProblems')
+from test_data import arrays
 
 def triplets(arr, target):
     arr.sort()
@@ -39,19 +42,15 @@ def render_arrays(arrays):
     for arr in arrays:
         print(arr)
 
-test_array_one = [1,2,3,4,5,7,8]
-test_array_two = [10,5,6,28,4,60,43,6,3,4,4,2,1,3]
-test_array_three = [1]
-test_array_four = [1,4,10]
-test_array_five = []
-test_array_six = [1,1,1,1,2,2,2,3,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,11,10,13,13,13,14,15,16,62,73,1515,111,54,76,123,23424,453,363,252,26,63,1,1,1,12,3,3,4,4,5,5,56,5,3,3,33]
-
+test_array_one = arrays.one_hundred_int_sequential_array
+test_array_two = arrays.one_hundred_int_random_array
+test_array_three = arrays.ten_thousand_int_sequential_array
 
 target = 15
 
 def main():
     start_time = datetime.now()
-    answer = unique_triplets(test_array_six, target)
+    answer = unique_triplets(test_array_one, target)
     render_arrays(answer)
     finish_time = datetime.now()
     print("Runtime: " + str(finish_time - start_time))
