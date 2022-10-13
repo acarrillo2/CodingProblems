@@ -2,9 +2,6 @@
 Chapter 11 exercises of "A Common-Sense Guide to Data Structures and Algorithms"
 """
 
-import re
-
-
 def count_characters_in_array(array):
     length_of_first_item_in_array = len(array[0])
     if (len(array) == 1):
