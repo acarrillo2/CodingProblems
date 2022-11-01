@@ -1,5 +1,5 @@
 """
-Chapter 17 exercises of "A Common-Sense Guide to Data Structures and Algorithms"
+Chapter 18 exercises of "A Common-Sense Guide to Data Structures and Algorithms"
 """
 from queue import SimpleQueue
 
